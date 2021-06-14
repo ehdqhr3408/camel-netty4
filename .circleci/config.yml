@@ -1,0 +1,10 @@
+version: 2.1
+
+orbs:
+  maven: circleci/maven@1.0.0
+
+workflows:
+  Build:
+    jobs:
+      - maven/test:
+          settings_file: settings.xml
